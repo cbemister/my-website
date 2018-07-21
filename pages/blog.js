@@ -5,8 +5,6 @@ import Link from 'next/link'
 import { format } from 'date-fns'
 import client from '../client'
 
-import Layout from '../components/Layout'
-
 const builder = imageUrlBuilder(client)
 function urlFor(source) {
   return builder.image(source)
@@ -20,8 +18,10 @@ const CommaJoiner = ({ list = [], conjuction = 'and', separator = ',' }) => <Fra
 </span>)
 }</Fragment>
 
+
+
 const BlogPost = ({ title = 'No title', name = 'No name', categories = [], authorImage = {}, body = [], _updatedAt = '' }) => (
-  <Layout> <div>
+   <div>
     <h1>{title}</h1>
     By {name}. Updated {format(_updatedAt, 'DD. MMMM, YYYY')}. {categories.length && <span>Posted in <CommaJoiner list={categories} /></span>}
     <div><img src={urlFor(authorImage).width(50).url()} /></div>
@@ -34,7 +34,6 @@ const BlogPost = ({ title = 'No title', name = 'No name', categories = [], autho
     <Link href="/"><a>Back to home</a></Link>
   </div>
 
-  </Layout>
 
 );
 

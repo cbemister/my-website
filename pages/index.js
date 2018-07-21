@@ -2,9 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import { format } from 'date-fns'
 import client from '../client'
-import Layout from '../components/Layout'
 
-const Index = ({ posts = [] }) => <Layout>
+const Index = ({ posts = [] }) => 
     <div>
 
         <h1>Welcome to a blog!</h1>
@@ -19,9 +18,7 @@ const Index = ({ posts = [] }) => <Layout>
             }
         </ul>
 
-    </div>
-
-</Layout>
+    </div>  
 
 Index.getInitialProps = async () => {
     return {
