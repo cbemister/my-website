@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { format } from 'date-fns'
 import client from '../client'
 
+import Layout from '../components/Layout'
+
 const builder = imageUrlBuilder(client)
 function urlFor(source) {
   return builder.image(source)
@@ -12,24 +14,29 @@ function urlFor(source) {
 
 const CommaJoiner = ({ list = [], conjuction = 'and', separator = ',' }) => <Fragment>{list.map((item, index) => <span key={item}>{item}{
   (list.length === 1) ? '.' :
-  (index + 2 === list.length) ? ` ${conjuction} ` :
-  (index + 1 === list.length) ? '.' : `${separator} `
-  }
-  </span>)
+    (index + 2 === list.length) ? ` ${conjuction} ` :
+      (index + 1 === list.length) ? '.' : `${separator} `
+}
+</span>)
 }</Fragment>
 
-const BlogPost = ({ title = 'No title', name = 'No name', categories = [], authorImage = {}, body = [], _updatedAt = '' }) => <div>
-  <h1>{title}</h1>
-  By {name}. Updated {format(_updatedAt, 'DD. MMMM, YYYY')}. {categories.length && <span>Posted in <CommaJoiner list={categories} /></span>}
-  <div><img src={urlFor(authorImage).width(50).url()} /></div>
-  <BlockContent
-    blocks={body}
-    imageOptions={{w: 320, h: 240, fit: 'max'}}
-    projectId={client.clientConfig.projectId}
-    dataset={client.clientConfig.dataset}
-  />
-  <Link href="/"><a>Back to home</a></Link>
-</div>
+const BlogPost = ({ title = 'No title', name = 'No name', categories = [], authorImage = {}, body = [], _updatedAt = '' }) => (
+  <Layout> <div>
+    <h1>{title}</h1>
+    By {name}. Updated {format(_updatedAt, 'DD. MMMM, YYYY')}. {categories.length && <span>Posted in <CommaJoiner list={categories} /></span>}
+    <div><img src={urlFor(authorImage).width(50).url()} /></div>
+    <BlockContent
+      blocks={body}
+      imageOptions={{ w: 320, h: 240, fit: 'max' }}
+      projectId={client.clientConfig.projectId}
+      dataset={client.clientConfig.dataset}
+    />
+    <Link href="/"><a>Back to home</a></Link>
+  </div>
+
+  </Layout>
+
+);
 
 BlogPost.getInitialProps = async ({ query: { slug } }) => {
   return await client.fetch(`*[slug.current == $slug][0]{
