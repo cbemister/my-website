@@ -3,9 +3,16 @@ import Link from 'next/link'
 import { format } from 'date-fns'
 import client from '../client'
 
-const Index = ({ posts = [] }) => 
-    <div>
+import NextSeo from 'next-seo';
 
+const Index = ({ posts = [] }) =>
+    <div>
+        <NextSeo
+            config={{
+                title: 'My Website',
+                description: 'Updated description as well'
+            }}
+        />
         <h1>Welcome to a blog!</h1>
         <h2>Posts</h2>
         <ul>
@@ -18,7 +25,7 @@ const Index = ({ posts = [] }) =>
             }
         </ul>
 
-    </div>  
+    </div>
 
 Index.getInitialProps = async () => {
     return {
