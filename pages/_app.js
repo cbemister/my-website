@@ -2,7 +2,7 @@ import App, { Container } from 'next/app';
 import React from 'react';
 import NextSeo from 'next-seo';
  
-const DEFAULT_SEO = {
+const defaultSeo = {
   title: 'My Portfolio Website - ChrisBemister.com ',
   description: 'I\'m building this website to showcase the web applications that I\'ve built, and to motivate me to build more advanced ones.' ,
   openGraph: {
