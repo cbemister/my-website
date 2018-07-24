@@ -5,7 +5,7 @@ import client from '../client'
 
 import NextSeo from 'next-seo';
 
-//import "../scss/styles.scss"
+import "../scss/styles.scss"
 
 const Index = ({ posts = [] }) =>
     <div>
@@ -15,7 +15,7 @@ const Index = ({ posts = [] }) =>
                 description: 'Updated description as well'
             }}
         />
-        <h1 className="example">Welcome to a blog!</h1>
+        <h1 className="example">Welcome to my blog!</h1>
         <h2>Posts</h2>
         <ul>
             {

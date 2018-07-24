@@ -6,6 +6,12 @@ import { format } from 'date-fns'
 import client from '../client'
 
 import NextSeo from 'next-seo';
+import Navbar from '../components/Navbar'
+
+
+const content = () => {
+  return <Navbar/>
+}
 
 const builder = imageUrlBuilder(client)
 function urlFor(source) {
