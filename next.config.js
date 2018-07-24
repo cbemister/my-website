@@ -9,7 +9,7 @@ module.exports = {
           (acc, slug) => ({
             '/': { page: '/' },
             ...acc,
-            [`/blog/${slug}`]: { page: '/blog', query: { slug } }
+            [`/blog/${slug}`]: { page: '/post', query: { slug } }
           }),
           {}
         )
@@ -19,5 +19,5 @@ module.exports = {
   }
 }
 
-const withSass = require('@zeit/next-sass')
-module.exports = withSass()
+// const withSass = require('@zeit/next-sass')
+// module.exports = withSass()

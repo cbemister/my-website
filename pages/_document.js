@@ -29,31 +29,44 @@ export default class MyDocument extends Document {
     const { isProduction } = this.props;
     return (
 
-        <html lang="en">
+      <html lang="en">
         <Head>
+
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-            <title>{ this.props.title }</title>
-            <link rel="stylesheet" href="/_next/static/style.css" />
+            <title>{this.props.title}</title>
+            {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
+
+            <link href="../static/css/css_1.css" rel="stylesheet" type="text/css" />
+              <link href="../static/css/css.css" rel="stylesheet" type="text/css" />
+
+              <link rel="stylesheet" href="../static/css/portfolio.css" />
+
+                  <script src="../static/js/jquery.min.js"></script>
+                  <script src="../static/js/anime.min.js"></script>
+
+
+                  <script type="text/javascript" src="../static/js/app.js"></script>
+
         </Head>
-        <body>
-            <Main />
-            <NextScript />
-          {/* We only want to add the scripts if in production */}
-          {isProduction && (
-            <Fragment>
-              <script
-                async
-                src="https://www.googletagmanager.com/gtag/js?id=UA-17688655-4                "
-              />
-              {/* We call the function above to inject the contents of the script tag */}
-              <script dangerouslySetInnerHTML={this.setGoogleTags()} />
-            </Fragment>
-          )}
-        </body>
+                  <body className="portfolio">
+                    <Main />
+                    <NextScript />
+                    {/* We only want to add the scripts if in production */}
+                    {isProduction && (
+                      <Fragment>
+                        <script
+                          async
+                          src="https://www.googletagmanager.com/gtag/js?id=UA-17688655-4                "
+                        />
+                        {/* We call the function above to inject the contents of the script tag */}
+                        <script dangerouslySetInnerHTML={this.setGoogleTags()} />
+                      </Fragment>
+                    )}
+                  </body>
 
     </html>
 
-    );
-  }
-}
+                );
+              }
+            }
