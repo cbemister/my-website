@@ -8,6 +8,13 @@ module.exports = {
         data.reduce(
           (acc, slug) => ({
             '/': { page: '/' },
+            '/apps': { page: '/apps' },
+            '/stack': { page: '/stack' },
+            '/blog': { page: '/blog' },
+            '/profile': { page: '/profile' },
+            '/github': { page: '/github' },
+            '/contact': { page: '/contact' },
+            '/resume': { page: '/resume' },
             ...acc,
             [`/blog/${slug}`]: { page: '/post', query: { slug } }
           }),
