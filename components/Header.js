@@ -2,6 +2,7 @@ import { format } from 'date-fns'
 
 //COMPONENTS
 import NextSeo from 'next-seo';
+import Navbar from './Navbar'
 
 export default ({ seoTitle, description, pageTitle, categories, date }) => {
 
@@ -38,13 +39,7 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
                         <div className="nav-header-line js-nav-header-line"></div>
                     </div>
 
-                    <ul className="nav-categories">
-                        <li className="nav-category js-nav-animate"><a href="/" className="nav-link">Home</a></li>
-                        <li className="nav-category js-nav-animate"><a href="/apps" className="nav-link">Apps</a></li>
-                        <li className="nav-category js-nav-animate"><a href="/stack" className="nav-link">Stack</a></li>
-                        <li className="nav-category js-nav-animate"><a href="/blog" className="nav-link">Blog</a></li>
-                        <li className="nav-category js-nav-animate"><a href="/profile" className="nav-link">Profile</a></li>
-                    </ul>
+                    <Navbar />
 
                     <div className="nav-sublinks js-nav-animate">
                         <div className="js-nav-animate">
