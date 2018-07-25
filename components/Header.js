@@ -12,7 +12,7 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
         <div>
             <NextSeo
                 config={{
-                    title: date ? seoTitle + ' | ' + categories + ' | ChrisBemister.com' + website : seoTitle,
+                    title: date ? seoTitle + ' | ' + categories + ' | ChrisBemister.com' : seoTitle,
                     description: date ? seoTitle + ' | posted in ' + categories + ' on ' + format(date, 'DD. MMMM, YYYY') : description
                 }}
             />
