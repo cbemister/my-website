@@ -1,5 +1,6 @@
+import React from 'react'
+
 //COMPONENTS
-import NextSeo from 'next-seo';
 import Header from '../components/Header';
 
 export default () => {
