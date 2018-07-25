@@ -1,18 +1,13 @@
-import Link from 'next/link'
+import A from './Nav_item'
 
 const Navbar = () => (
-
-    <div>
         <ul>
-            <Link href="/"><li><a>Home</a></li></Link>
-            <Link href="/apps"><li>Apps</li></Link>
-            <Link href="/stack"><li>Stack</li></Link>
-            <Link href="/blog"><li>Blog</li></Link>
-            <Link href="/profile"><li>Profile</li></Link>
+            <A href="/" name="Home" />
+            <A href="/apps" name="Apps" />
+            <A href="/stack" name="Stack" />
+            <A href="/blog" name="Blog" />
+            <A href="/profile" name="Profile" />
         </ul>
-    </div>
-
-
 );
 
 export default Navbar

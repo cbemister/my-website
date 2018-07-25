@@ -1,59 +1,16 @@
 import React from 'react'
-import Link from 'next/link'
-import { format } from 'date-fns'
 import client from '../client'
 
-import NextSeo from 'next-seo';
+//COMPONENTS
+import Header from '../components/Header';
+
 
 //import "../scss/styles.scss"
 
 const Index = ({ posts = [] }) =>
     <div className="portfolio">
-        <NextSeo
-            config={{
-                title: 'My Website',
-                description: 'Updated description as well'
-            }}
-        />
-
-            <div className="menu-animation-wrapper">
-                <div className="menu-animated-background"></div>
-            </div>
-            <a href="/" className="menu ">
-                <span className="menu-icon-line-1 menu-icon-line"></span>
-                <span className="menu-icon-line-2 menu-icon-line"></span>
-                <span className="menu-icon-line-3 menu-icon-line"></span>
-            </a>
-
-            <div className="nav js-nav">
-                <div className="nav-content">
-                    <div className="js-nav-header nav-header">
-                        <span className="nav-header-text">Chris Bemister</span>
-                        <div className="nav-header-line js-nav-header-line"></div>
-                    </div>
-
-                    <ul className="nav-categories">
-                        <li className="nav-category js-nav-animate"><a href="/apps" className="nav-link">Apps</a></li>
-                        <li className="nav-category js-nav-animate"><a href="/stack" className="nav-link">Stack</a></li>
-                        <li className="nav-category js-nav-animate"><a href="/blog" className="nav-link">Blog</a></li>
-                        <li className="nav-category js-nav-animate"><a href="/profile/" className="nav-link">Profile</a></li>
-                    </ul>
-
-                    <div className="nav-sublinks js-nav-animate">
-                        <div className="js-nav-animate">
-                            <a className="nav-link nav-sublink" href="/github">Github</a>
-                            <a className="nav-link nav-sublink" href="/contact">Contact</a>
-                            <a className="nav-link nav-sublink" href="/resume">Resume</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+        <Header seoTitle="| ChrisBemister.com" description="blah"/>
             <div className="portfolio-intro">
-                <h1 className="site-name">
-                    <a className="site-name-link" href="/">Chris Bemister</a>
-                </h1>
 
                 <h2 className="single-page-header portfolio-intro-header">I make the seemingly impossible - possible - or at least aspire to.</h2>
             </div>
