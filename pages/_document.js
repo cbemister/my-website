@@ -37,16 +37,12 @@ export default class MyDocument extends Document {
             <title>{this.props.title}</title>
             {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
 
-            <link href="../static/css/css_1.css" rel="stylesheet" type="text/css" />
-              <link href="../static/css/css.css" rel="stylesheet" type="text/css" />
+            <link href="../static/css/bundled.min.css" rel="stylesheet" type="text/css" />
 
-              <link rel="stylesheet" href="../static/css/portfolio.css" />
+                  <script async src="./../static/js/jquery.min.js"></script>
+                  <script async src="../static/js/anime.min.js"></script>
 
-                  <script src="../static/js/jquery.min.js"></script>
-                  <script src="../static/js/anime.min.js"></script>
-
-
-                  <script type="text/javascript" src="../static/js/app.js"></script>
+                  <script async type="text/javascript" src="../static/js/app.js"></script>
 
         </Head>
                   <body className="portfolio">

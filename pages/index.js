@@ -12,20 +12,20 @@ const Index = ({ posts = [] }) =>
         <Header seoTitle="| ChrisBemister.com" description="blah"/>
             <div className="portfolio-intro">
 
-                <h2 className="single-page-header portfolio-intro-header">I make the seemingly impossible - possible - or at least aspire to.</h2>
+                <h2 className="single-page-header portfolio-intro-header">I aspire to make the seemingly impossible - possible.</h2>
             </div>
 
             <div className="case-items">
                 <h2 className="section-header">Work.</h2>
 
-                <div data-image="projectName.jpg" className="case-item case-item-projectName">
+                <div data-image="#" className="case-item">
                     <span className="button-image-overlay">View project</span>
                     <h3 className="case-item-header">Project Title</h3>
                     <p className="case-item-text">Aliquip elit labore non id nulla dolore magna in ea tempor. Ad aliquip mollit et ullamco dolore culpa aliquip ut tempor velit aliquip adipisicing. Consequat reprehenderit veniam dolor sint velit dolor.</p>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div className="case-item case-item-projectName">
+                <div className="case-item">
                     <span className="button-image-overlay">View project</span>
                     <h3 className="case-item-header">Project Title</h3>
                     <p className="case-item-text">Aliquip elit labore non id nulla dolore magna in ea tempor. Ad aliquip mollit et ullamco dolore culpa aliquip ut tempor velit aliquip adipisicing. Consequat reprehenderit veniam dolor sint velit dolor.</p>
@@ -35,22 +35,22 @@ const Index = ({ posts = [] }) =>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div data-image="projectName.jpg" className="case-item case-item-wide case-item-projectName">
+                <div data-image="#" className="case-item case-item-wide">
                     <span className="button-image-overlay">View project</span>
                     <h3 className="case-item-header">Project Title</h3>
 
-                    <p className="case-item-text case-item-text-projectName">projectName</p>
+                    <p className="case-item-text">projectName</p>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div data-image="projectName.jpg" className="case-item case-item-projectName">
+                <div data-image="#" className="case-item">
                     <span className="button-image-overlay">Read more</span>
                     <h3 className="case-item-header">Project Title</h3>
                     <p className="case-item-text">Aliquip elit labore non id nulla dolore magna in ea tempor. Ad aliquip mollit et ullamco dolore culpa aliquip ut tempor velit aliquip adipisicing. Consequat reprehenderit veniam dolor sint velit dolor.</p>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div className="case-item case-item-projectName">
+                <div className="case-item">
                     <span className="button-image-overlay">View project</span>
                     <h3 className="case-item-header">Project Title</h3>
                     <p className="case-item-text">Aliquip elit labore non id nulla dolore magna in ea tempor. Ad aliquip mollit et ullamco dolore culpa aliquip ut tempor velit aliquip adipisicing. Consequat reprehenderit veniam dolor sint velit dolor.</p>
@@ -60,14 +60,14 @@ const Index = ({ posts = [] }) =>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div data-image="curriculum.jpg" className="case-item case-item-wide case-item-hi-curriculum">
+                <div data-image="#" className="case-item case-item-wide case-item-hi-curriculum">
                     <span className="button-image-overlay">View program</span>
                     <h3 className="case-item-header">Aute ipsum nisi anim nostrud fugiat</h3>
                     <p className="case-item-text">Aliquip elit labore non id nulla dolore magna in ea tempor. Ad aliquip mollit et ullamco dolore culpa aliquip ut tempor velit aliquip adipisicing. Consequat reprehenderit veniam dolor sint velit dolor.</p>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div className="case-item case-item-projectName">
+                <div className="case-item">
                     <span className="button-image-overlay">View project</span>
                     <h3 className="case-item-header">Project Title</h3>
                     <p className="case-item-text">Aliquip elit labore non id nulla dolore magna in ea tempor. Ad aliquip mollit et ullamco dolore culpa aliquip ut tempor velit aliquip adipisicing. Consequat reprehenderit veniam dolor sint velit dolor.</p>
@@ -77,18 +77,18 @@ const Index = ({ posts = [] }) =>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div data-image="projectName.jpg" className="case-item case-item-projectName">
+                <div data-image="#" className="case-item">
                     <span className="button-image-overlay">View project</span>
                     <h3 className="case-item-header">Project Title</h3>
                     <p className="case-item-text">Aliquip elit labore non id nulla dolore magna in ea tempor. Ad aliquip mollit et ullamco dolore culpa aliquip ut tempor velit aliquip adipisicing. Consequat reprehenderit veniam dolor sint velit dolor.</p>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div className="case-item case-item-wide case-item-projectName">
+                <div className="case-item case-item-wide">
                     <span className="button-image-overlay">View project</span>
-                    <h3 className="case-item-header case-item-header-projectName">Project Title</h3>
+                    <h3 className="case-item-header">Project Title</h3>
 
-                    <p className="case-item-text case-item-text-projectName">Exercitation proident cupidatat irure quis ex. Commodo consectetur duis ad proident non qui ipsum veniam ipsum eiusmod sint nostrud. Lorem nisi sint enim officia ut sint minim nostrud ea duis exercitation officia. Velit do qui sit excepteur veniam adipisicing laboris mollit. Officia ex exercitation sit laboris qui officia laborum esse labore consequat excepteur ullamco ullamco aliqua. Ullamco reprehenderit officia enim ullamco.</p>
+                    <p className="case-item-text">Exercitation proident cupidatat irure quis ex. Commodo consectetur duis ad proident non qui ipsum veniam ipsum eiusmod sint nostrud. Lorem nisi sint enim officia ut sint minim nostrud ea duis exercitation officia. Velit do qui sit excepteur veniam adipisicing laboris mollit. Officia ex exercitation sit laboris qui officia laborum esse labore consequat excepteur ullamco ullamco aliqua. Ullamco reprehenderit officia enim ullamco.</p>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
@@ -102,14 +102,14 @@ const Index = ({ posts = [] }) =>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div data-image="projectName.jpg" className="case-item case-item-projectName">
+                <div data-image="#" className="case-item">
                     <span className="button-image-overlay">View project</span>
                     <h3 className="case-item-header">Project Title</h3>
                     <p className="case-item-text">Laborum incididunt fugiat velit cillum nostrud dolor amet. Sit occaecat irure deserunt minim est eiusmod eiusmod occaecat incididunt dolor cupidatat. Reprehenderit veniam excepteur duis id amet.</p>
                     <a href="#" className="case-item-link"></a>
                 </div>
 
-                <div data-image="projectName.jpg" className="case-item case-item-wide case-item-blog">
+                <div data-image="#" className="case-item case-item-wide">
                     <span className="button-image-overlay">View blog</span>
                     <h3 className="case-item-header">Lorem magna aute Lorem commodo amet</h3>
                     <p className="case-item-text">Anim incididunt mollit Lorem velit ut. Irure nostrud non non sint exercitation pariatur adipisicing aliqua aute esse adipisicing eiusmod consequat. Anim duis qui proident adipisicing.</p>
@@ -124,7 +124,7 @@ const Index = ({ posts = [] }) =>
                 <div className="contact-info">
                     <a className="case-item-header" href="mailto:hello@ChrisBemister.com">hello@<br />ChrisBemister.com</a>
 
-                    <p className="case-item-text">I love to learn, develop, and parent. I work as the <strong>Web Technologist</strong> for <strong><a href="https://autocan.ca"> AutoCanada</a></strong> <a href="https://twitter.com/ChrisBemister">Say hi!</a><br /><br />
+                    <p className="case-item-text">I love to learn, develop, and hangout with my kids. I work as the <strong>Web Technologist</strong> for <strong><a href="https://autocan.ca"> AutoCanada</a></strong> <a href="https://twitter.com/ChrisBemister">Say hi!</a><br /><br />
 
                         Chris Bemister <br />Edmonton, Alberta</p>
 
@@ -133,7 +133,7 @@ const Index = ({ posts = [] }) =>
                         <a className="contact-link contact-link-twitter" href="https://twitter.com/ChrisBemister"></a>
                     </div>
 
-                    <div data-image="profile.jpg" className="contact-picture">
+                    <div data-image="#" className="contact-picture">
 
                     </div>
                 </div>
