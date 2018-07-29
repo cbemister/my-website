@@ -22,7 +22,7 @@ const Index = ({ posts = [] }) =>
                     {/* <span className="button-image-overlay">View project</span> */}
                     <h3 className="case-item-header">Crawl to Dev Node.js App </h3>
                     <p className="case-item-text">I built this app to create a local dev environment to streamline my development process when working on new page level website functionality.  I wanted an alternative to developing in browser, on the live website, or working with the limitations of the website staging environment.  The app has the following features & functionality: built using Node.js as CLI application, download an entire webpage's assets, and launch a local dev envivronment from it.  You can check it out on my Github page.   </p>
-                    <a href="https://github.com/cbemister/crawl-to-dev" target="_new" className="case-item-link"></a>
+                    <a href="https://github.com/cbemister/crawl-to-dev-app" target="_new" className="case-item-link"></a>
                 </div>
 
                 <div className="case-item">
