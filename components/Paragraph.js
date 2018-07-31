@@ -1,0 +1,1 @@
+export default ({description}) => <p className="case-item-text">{description} </p>

@@ -746,7 +746,7 @@ html {
   text-align: center;
   font-size: 16px;
   font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
-  height: 768px;
+  height: 90vh;
 }
 .wrapper {
   position: relative;
@@ -759,9 +759,10 @@ html {
 .portfolio-intro-header {
   position: absolute;
   padding: 0 20px;
-  top: 38.5%;
+  top: 50%;
   left: 0;
   right: 0;
+  transform: translateY(-100%);
 }
 @media all and (max-width: 480px) {
   .portfolio-intro-header {
@@ -796,6 +797,9 @@ html {
   display: flex;
   flex-flow: row wrap;
 }
+.case-items.case-item-list {
+  margin-top: -100px;
+}
 .case-wrapper + .case-items {
   margin-top: 0;
 }
@@ -821,6 +825,12 @@ html {
   min-height: 445px;
   position: relative;
   overflow: hidden;
+}
+.case-item-third {
+  flex: 1 25%;
+}
+.case-item-third:first-child {
+  margin-left: 5.5%;
 }
 .case-item:hover .button-image-overlay {
   transform: scaleY(1) translateZ(0);
@@ -886,14 +896,28 @@ html {
   right: 0;
   z-index: 100;
 }
-.case-item-wide {
+.case-item-full {
   text-align: center;
   min-height: 440px;
   flex: 1 100%;
 }
+.case-item-article {
+  text-align: left;
+  flex: 1 75%;
+  margin-left: 12.5%;
+  min-height: initial;
+}
+.case-item-article > h3 {
+  min-height: 1em;
+}
+
+.case-item-article ~ .case-item-article {
+  padding-top: 15px;
+} 
+
 @media all and (max-width: 800px) {
-  .case-item-wide,
-  .case-item-wide.case-item-blog {
+  .case-item-full,
+  .case-item-full.case-item-blog {
     min-height: initial;
   }
 }
@@ -906,7 +930,16 @@ html {
   position: relative;
   z-index: 10;
 }
-.case-item-wide .case-item-header {
+.case-item-list .case-item-header {
+  font: normal 32px/1.1 "EB Garamond", serif;
+  margin-top: 0.9em;
+  margin-bottom: 0.7em;
+  min-height: initial;
+}
+.case-items.case-item-list li {
+  margin-left: 35px;
+}
+.case-item-full .case-item-header {
   margin-top: 0.9em;
   margin-bottom: 0.7em;
   min-height: initial;
@@ -921,7 +954,7 @@ html {
     font-size: 50px;
     max-width: 400px;
   }
-  .case-item-wide .case-item-header {
+  .case-item-full .case-item-header {
     max-width: initial;
   }
 }
@@ -930,17 +963,17 @@ html {
     font-size: 42px;
   }
 }
-.case-item-wide .case-item-header-gh-windows {
+.case-item-full .case-item-header-gh-windows {
   margin-top: 0.6em;
   margin-bottom: 1.35em;
 }
 @media all and (max-width: 800px) {
-  .case-item-wide .case-item-header {
+  .case-item-full .case-item-header {
     margin-top: 0;
   }
 }
 .case-item-text {
-  max-width: 50%;
+  max-width: 90%;
   font-size: 14px;
   line-height: 1.9em;
   position: relative;
@@ -950,7 +983,7 @@ html {
   transform: translateZ(0);
   font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
 }
-.case-item-text::before {
+.case-item-header ~ .case-item-text::before {
   content: "";
   display: block;
   position: absolute;
@@ -960,36 +993,36 @@ html {
   background-color: currentColor;
   width: 60px;
 }
-.case-item-wide .case-item-text {
+.case-item-full .case-item-text {
   margin: auto;
   max-width: 45%;
 }
-.case-item-wide .case-item-text::before {
+.case-item-full .case-item-text::before {
   right: 0;
   margin: auto;
 }
 @media all and (max-width: 900px) {
   .case-item-text,
-  .case-item-wide .case-item-text {
+  .case-item-full .case-item-text {
     max-width: 70%;
   }
 }
 @media all and (max-width: 800px) {
   .case-item-text,
-  .case-item-wide .case-item-text {
+  .case-item-full .case-item-text {
     max-width: 60%;
     padding-bottom: 40px;
   }
 }
 @media all and (max-width: 600px) {
   .case-item-text,
-  .case-item-wide .case-item-text {
+  .case-item-full .case-item-text {
     max-width: 50%;
   }
 }
 @media all and (max-width: 480px) {
   .case-item-text,
-  .case-item-wide .case-item-text {
+  .case-item-full .case-item-text {
     max-width: 75%;
   }
 }

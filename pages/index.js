@@ -3,39 +3,29 @@ import client from '../client'
 
 //COMPONENTS
 import Header from '../components/Header';
+import Case_item from '../components/Case_item';
 
 
 //import "../scss/styles.scss"
 
 const Index = ({ posts = [] }) =>
     <div className="portfolio">
-        <Header seoTitle="| ChrisBemister.com" description="blah"/>
+        <Header seoTitle="My Portfolio Website | ChrisBemister.com" description="blah"/>
             <div className="portfolio-intro">
 
                 <h2 className="single-page-header portfolio-intro-header">I aspire to make the seemingly impossible - possible.</h2>
             </div>
 
             <div className="case-items">
-                <h2 className="section-header">Projects.</h2>
+                <h2 className="section-header">Code.</h2>
 
-                <div data-image="#" className="case-item">
-                    {/* <span className="button-image-overlay">View project</span> */}
-                    <h3 className="case-item-header">Crawl to Dev Node.js App </h3>
-                    <p className="case-item-text">I built this app to create a local dev environment to streamline my development process when working on new page level website functionality.  I wanted an alternative to developing in browser, on the live website, or working with the limitations of the website staging environment.  The app has the following features & functionality: built using Node.js as CLI application, download an entire webpage's assets, and launch a local dev envivronment from it.  You can check it out on my Github page.   </p>
-                    <a href="https://github.com/cbemister/crawl-to-dev-app" target="_new" className="case-item-link"></a>
-                </div>
+                <Case_item headline="Crawl to Dev Node.js App " image="#" description="I built this app to create a local dev environment to streamline my development process when working on new page level website functionality.  I wanted an alternative to developing in browser, on the live website, or working with the limitations of the website staging environment.  The app has the following features & functionality: built using Node.js as CLI application, download an entire webpage's assets, and launch a local dev envivronment from it. You can check it out on my Github page." href="https://github.com/cbemister/crawl-to-dev-app" layout="case-item-article"/>
 
-                <div className="case-item">
-                    {/* <span className="button-image-overlay">View project</span> */}
-                    <h3 className="case-item-header">Vehicle Image Download App</h3>
-                    <p className="case-item-text">I built this app to make it easier for my design team to be able to download the vehicle specifications and photos of a specific stock number.  I built two version of this app: a version to download multiple photos of a single stock number or download a single photo for multiple stock numbers.  The app has the following features & functionality: built using AJAX as a single page app hosted on a live website, add-to-cart functionality, select one or more photos to download, and download vehicle specifications as CSV file. </p>  
-                    <div className="case-item-content">
-                        <div className="content-projectName"></div>
-                    </div>
-                    <a href="#" className="case-item-link"></a>
-                </div>
+                <Case_item headline="Vehicle Image Download App" image="#" description="I built this app to make it easier for my design team to be able to download the vehicle specifications and photos of a specific stock number.  I built two version of this app: a version to download multiple photos of a single stock number or download a single photo for multiple stock numbers.  The app has the following features & functionality: built using AJAX as a single page app hosted on a live website, add-to-cart functionality, select one or more photos to download, and download vehicle specifications as CSV file." href="https://www.autocan.ca/web-app.htm"/>
 
-                <div data-image="#" className="case-item case-item-wide">
+
+
+                <div data-image="#" className="case-item case-item-full">
                     {/* <span className="button-image-overlay">View project</span> */}
                     <h3 className="case-item-header">ChrisBemister.com Webiste</h3>
 

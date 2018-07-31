@@ -21,7 +21,7 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
                 <a className="site-name-link" href="/">Chris Bemister</a>
             </h1>
 
-            {hasPageTitle}
+            {/* {hasPageTitle} */}
 
             <div className="menu-animation-wrapper">
                 <div className="menu-animated-background"></div>
