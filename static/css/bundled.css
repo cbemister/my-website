@@ -829,9 +829,13 @@ html {
 .case-item-third {
   flex: 1 25%;
 }
-.case-item-third:first-child {
-  margin-left: 5.5%;
+
+@media all and (min-width: 480px) {
+  .case-item-third:first-child {
+    margin-left: 5.5%;
+  }
 }
+
 .case-item:hover .button-image-overlay {
   transform: scaleY(1) translateZ(0);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);

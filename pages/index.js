@@ -27,7 +27,7 @@ const Index = ({ posts = [] }) =>
 
                 <div data-image="#" className="case-item case-item-full">
                     {/* <span className="button-image-overlay">View project</span> */}
-                    <h3 className="case-item-header">ChrisBemister.com Webiste</h3>
+                    <h3 className="case-item-header">My Portfolio Website</h3>
 
                     <p className="case-item-text">I am building this website as both a portfolio project to showcase what I have built, and as a platform to help me build new website functionality and applications.  I am not always able to apply the advanced web development techniques that I have been learning at my current position. The website has the following features & functionality: built using Next.js to create a Reactbased server-side rendered app, uses Sanity.io to store the content in a headless CMS, hosted on Netlify static site hosting, automatic deployment through Zapier using web hooks, and Github.</p>
                     <a href="#" className="case-item-link"></a>
