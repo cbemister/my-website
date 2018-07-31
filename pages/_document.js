@@ -42,7 +42,7 @@ export default class MyDocument extends Document {
                   <script async src="./../static/js/jquery.min.js"></script>
                   <script async src="../static/js/anime.min.js"></script>
 
-                  <script async type="text/javascript" src="../static/js/app.js"></script>
+                  <script defer type="text/javascript" src="../static/js/app.js"></script>
 
         </Head>
                   <body className="portfolio">
