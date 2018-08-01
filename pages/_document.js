@@ -39,10 +39,10 @@ export default class MyDocument extends Document {
 
             <link href="../static/css/bundled.min.css" rel="stylesheet" type="text/css" />
 
-                  <script async src="./../static/js/jquery.min.js"></script>
-                  <script async src="../static/js/anime.min.js"></script>
+                  <script src="./../static/js/jquery.min.js"></script>
+                  <script src="../static/js/anime.min.js"></script>
 
-                  <script async type="text/javascript" src="../static/js/app.js"></script>
+                  <script type="text/javascript" src="../static/js/app.js"></script>
 
         </Head>
                   <body className="portfolio">

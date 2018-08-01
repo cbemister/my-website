@@ -11,8 +11,6 @@ export default () => {
 
       <Case_item headline="Apps" description="I am working to become a senior web developer.  In order to do that, I am continuously learning about new web technologies and the related knowledge that will be required to perform that role." layout="case-item-article" />
 
-      {/* <Case_item description="I am working to become a senior web developer.  In order to do that, I am continuously learning about new web technologies and the related knowledge that will be required to perform that role." layout="case-item-article" /> */}
-
       <div className="case-items case-item-list">
 
         <div data-image="#" className="case-item case-item-third">
