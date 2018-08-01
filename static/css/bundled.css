@@ -829,26 +829,27 @@ html {
 .case-item-third {
   flex: 1 25%;
 }
-
+.case-items.case-item-list li {
+  display: block;
+}
 @media all and (min-width: 480px) {
   .case-item-third:first-child {
     margin-left: 5.5%;
   }
 }
 @media all and (max-width: 479px) {
-
   .case-items.case-item-list {
     flex-direction: column;
     align-items: center;
+  }
+  .case-items.case-item-list li {
+    text-align: center;
   }
   .case-item-text {
     max-width: 87.5%;
     margin-bottom: 0;
   }
-  .case-items.case-item-list li {
-    display: block;
-    text-align: center;
-  }
+
   .case-item-list .case-item:first-child {
     padding-top: 30px;
   }
