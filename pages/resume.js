@@ -1,13 +1,14 @@
 import React from 'react'
 
 //COMPONENTS
-import Header from '../components/Header';
+import Header from '../components/Header'
+import Case_item from '../components/Case_item'
 
 export default () => {
   return (
     <div>
       <Header seoTitle="My Resume | ChrisBemister.com" description="Check out my resume to learn about my knowledge, skills, and accomplishments" pageTitle="Learn about my knowledge, skills, and accomplishments" />
-      <div>Esse laboris minim enim labore et adipisicing amet labore eu minim laborum. Dolore occaecat eu proident adipisicing proident ipsum veniam id ex ut. Adipisicing fugiat enim exercitation elit adipisicing deserunt nisi laborum nisi labore consectetur quis voluptate. Pariatur labore officia officia aute deserunt ex. Nisi minim Lorem veniam excepteur occaecat tempor incididunt et cupidatat Lorem amet nisi labore est.</div>
+      <Case_item headline="My Resume" description="Labore culpa est enim consequat dolor proident commodo ipsum cupidatat aute sint. Sit ex mollit non nulla. Officia aute in in sit consequat ipsum veniam consequat qui. Exercitation exercitation adipisicing excepteur eiusmod ea eiusmod labore. In duis consequat velit qui tempor aliquip mollit esse. Sit ea voluptate consequat excepteur anim dolore duis enim cillum eiusmod velit. Qui commodo proident sint eu veniam consequat enim ipsum aliqua anim dolor proident enim." layout="case-item-article" />
     </div>
   );
 }

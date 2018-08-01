@@ -1,13 +1,16 @@
 import React from 'react'
 
 //COMPONENTS
-import Header from '../components/Header';
+import Header from '../components/Header'
+import Case_item from '../components/Case_item'
 
 export default () => {
   return (
     <div>
       <Header seoTitle="My Github | ChrisBemister.com" description="See a summary of my recent github account including ..." pageTitle="Github Account" />
-      <div>Laboris consectetur ad reprehenderit tempor Lorem fugiat deserunt officia dolore dolore non dolor cillum anim. Ad ut eiusmod dolore sunt laborum quis pariatur commodo occaecat quis. Nostrud duis id do excepteur nostrud qui sunt dolor exercitation velit ad.</div>
+
+      <Case_item headline="My Github" description="Labore culpa est enim consequat dolor proident commodo ipsum cupidatat aute sint. Sit ex mollit non nulla. Officia aute in in sit consequat ipsum veniam consequat qui. Exercitation exercitation adipisicing excepteur eiusmod ea eiusmod labore. In duis consequat velit qui tempor aliquip mollit esse. Sit ea voluptate consequat excepteur anim dolore duis enim cillum eiusmod velit. Qui commodo proident sint eu veniam consequat enim ipsum aliqua anim dolor proident enim." layout="case-item-article" />
+
     </div>
   );
 }
