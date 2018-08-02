@@ -1,8 +1,7 @@
 const client = require('./client')
+const withOffline = require('next-offline');
 
-const sw = require('./sw');
-
-module.exports = {
+module.exports = withOffline({
   exportPathMap: async function (defaultPathMap) {
     const path = await client
       .fetch('*[_type == "post"].slug.current')
@@ -23,11 +22,10 @@ module.exports = {
           {}
         )
       )
-      .then(sw)
       .catch(console.error)
     return path
   }
-}
+});
 
 // const withSass = require('@zeit/next-sass')
 // module.exports = withSass()
