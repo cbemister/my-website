@@ -26,7 +26,7 @@ module.exports = {
       .catch(console.error)
     return path
   },
-  sw();
+  sw
 }
 
 // const withSass = require('@zeit/next-sass')
