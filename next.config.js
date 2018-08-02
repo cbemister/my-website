@@ -30,4 +30,4 @@ module.exports = {
 // const withSass = require('@zeit/next-sass')
 // module.exports = withSass()
 
-module.exports.sw = withOffline()
+module.exports = withOffline()
