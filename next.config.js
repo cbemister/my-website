@@ -1,4 +1,5 @@
 const client = require('./client')
+const withOffline = require('next-offline')
 
 module.exports = {
   exportPathMap: async function (defaultPathMap) {
@@ -28,3 +29,5 @@ module.exports = {
 
 // const withSass = require('@zeit/next-sass')
 // module.exports = withSass()
+
+module.exports = withOffline()
