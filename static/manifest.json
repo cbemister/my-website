@@ -3,13 +3,6 @@
     "name": "My Portfolio Website | ChrisBemister.com",
     "short_name": "Web Apps",
     "description": "My portfolio website showing what I've built, what I'm building and what I can build.",
-    "start_url": "/",
-    "display": "standalone",
-    "orientation": "portrait-primary",
-    "theme_color": "#00aeef",
-    "background_color": "#8b8b8b",
-    "dir": "ltr",
-    "lang": "en-US",
     "icons": [{
       "src": "images/Icon-120.png",
       "sizes": "120x120",
@@ -34,5 +27,11 @@
       "src": "images/Icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
-    }]
+    }],
+    "start_url": "/",
+    "display": "fullscreen",
+    "theme_color": "#00aeef",
+    "background_color": "#8b8b8b",
+    "dir": "ltr",
+    "lang": "en-US"
   }
