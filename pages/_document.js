@@ -38,10 +38,10 @@ export default class MyDocument extends Document {
             {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
 
             <link href="../static/css/bundled.min.css" rel="stylesheet" type="text/css" />
-            <link rel="manifest" href="/static/manifest.json" />
-            <link rel="icon" href="images/color_logo_transparent.svg" sizes="any" type="image/svg+xml" />
+            <link rel="manifest" href="../static/manifest.json" />
+            <link rel="icon" href="../static/images/color_logo_transparent.svg" sizes="any" type="image/svg+xml" />
 
-                  <script src="./../static/js/jquery.min.js"></script>
+                  <script src="../static/js/jquery.min.js"></script>
                   <script src="../static/js/anime.min.js"></script>
 
                   <script type="text/javascript" src="../static/js/app.js"></script>
