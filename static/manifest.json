@@ -1,0 +1,30 @@
+
+{
+    "name": "ChrisBemister.com",
+    "short_name": "Web Apps",
+    "icons": [{
+      "src": "images/Iconcon-120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },{
+      "src": "images/Icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },{
+      "src": "images/Icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },{
+      "src": "images/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },{
+      "src": "images/Icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    }],
+    "start_url": "/",
+    "display": "fullscreen",
+    "theme_color": "#00aeef",
+    "background_color": "#fff"
+  }
