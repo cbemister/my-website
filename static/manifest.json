@@ -4,7 +4,6 @@
     "short_name": "Web Apps",
     "description": "My portfolio website showing what I've built, what I'm building and what I can build.",
     "start_url": "/",
-    "scope": ".",
     "display": "standalone",
     "orientation": "portrait-primary",
     "theme_color": "#00aeef",
