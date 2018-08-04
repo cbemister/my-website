@@ -57,10 +57,9 @@ export default class MyDocument extends Document {
             <link rel="icon" href="/static/images/favicon.png" type="image/png" sizes="32x32" />
             <link rel="icon" href="/static/images/Icon.svg" sizes="any" type="image/svg+xml" />
 
-                  <script src="/static/js/jquery.min.js"></script>
-                  <script src="/static/js/anime.min.js"></script>
-
-                  <script type="text/javascript" src="/static/js/app.js"></script>
+                  <script async src="/static/js/jquery.min.js"></script>
+                  <script async src="/static/js/anime.min.js"></script>
+                  <script defer type="text/javascript" src="/static/js/app.js"></script>
 
         </Head>
                   <body className="portfolio">
