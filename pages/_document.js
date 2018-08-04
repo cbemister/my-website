@@ -52,14 +52,16 @@ export default class MyDocument extends Document {
             {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
 
             <link href="/static/css/bundled.min.css" rel="stylesheet" type="text/css" />
+            <link href="/static/css/menu.css" rel="stylesheet" type="text/css" />
             <link rel="manifest" href="/static/manifest.json" />
 
             <link rel="icon" href="/static/images/favicon.png" type="image/png" sizes="32x32" />
             <link rel="icon" href="/static/images/Icon.svg" sizes="any" type="image/svg+xml" />
 
-                  <script async src="/static/js/jquery.min.js"></script>
-                  <script async src="/static/js/anime.min.js"></script>
-                  <script defer type="text/javascript" src="/static/js/app.js"></script>
+                  {/* <script src="/static/js/jquery.min.js"></script>
+                  <script src="/static/js/anime.min.js"></script>
+                  <script type="text/javascript" src="/static/js/app.js"></script> */}
+                  <script defer type="text/javascript" src="/static/js/menu.js"></script>
 
         </Head>
                   <body className="portfolio">

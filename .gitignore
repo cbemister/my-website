@@ -6,3 +6,4 @@ _blog-ideas
 _working-files
 static/template
 static/css/bundled.css
+out/service-worker.js

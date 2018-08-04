@@ -17,13 +17,42 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
                     description: date ? seoTitle + ' | posted in ' + categories + ' on ' + format(date, 'DD. MMMM, YYYY') : description
                 }}
             />
+
+ <div className="full-menu">
+            <div className="full-menu--middle">
+                <button className="menu-close">close</button>
+
+                <ul className="main-nav">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Work</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+            <button className="menu-toggle">Open full-screen navigation here</button>
+
             <h1 className="site-name">
                 <a className="site-name-link" href="/">Chris Bemister</a>
             </h1>
 
+
+
+
             {/* {hasPageTitle} */}
 
-            <div className="menu-animation-wrapper">
+            {/* <div className="menu-animation-wrapper">
                 <div className="menu-animated-background"></div>
             </div>
             <a href="/" className="menu ">
@@ -50,7 +79,7 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
                     </div>
                 </div>
 
-            </div>
+            </div> */}
 
         </div>
 
