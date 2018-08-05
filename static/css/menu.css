@@ -117,20 +117,10 @@
     color: #fff;
     background-color: transparent;
   }
-  .menu-toggle:before {
-    content: '\f0c9';
-    font-family: 'FontAwesome';
-    margin: 0 20px 0 0;
-  }
   .menu-toggle--close, .menu-toggle--close {
     position: absolute;
     top: 30px;
     right: 30px;
   }
-  .menu-toggle--close:before {
-    content: '\f00d';
-    color: #000;
-    font-size: 40px;
-    margin: 0;
-  }
+
   
