@@ -52,7 +52,6 @@ export default class MyDocument extends Document {
             {/* <link rel="stylesheet" href="/_next/static/style.css" /> */}
 
             <link href="/static/css/bundled.min.css" rel="stylesheet" type="text/css" />
-            <link href="/static/css/menu.css" rel="stylesheet" type="text/css" />
             <link rel="manifest" href="/static/manifest.json" />
 
             <link rel="icon" href="/static/images/favicon.png" type="image/png" sizes="32x32" />
