@@ -61,7 +61,7 @@ export default class MyDocument extends Document {
                   {/* <script src="/static/js/jquery.min.js"></script>
                   <script src="/static/js/anime.min.js"></script>
                   <script type="text/javascript" src="/static/js/app.js"></script> */}
-                  <script type="text/javascript" src="/static/js/menu.js"></script>
+                  <script defer type="text/javascript" src="/static/js/menu.js"></script>
 
         </Head>
                   <body className="portfolio">

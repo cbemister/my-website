@@ -43,10 +43,10 @@ h1 {
   padding: 0;
 }
 a {
-  color: #c44736;
+  color: #00aeef;
 }
 a:hover {
-  color: #b84336;
+  color: #8b8b8b;
 }
 .clear {
   color: inherit;
@@ -88,7 +88,7 @@ p {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #b84336;
+  background-color: #8b8b8b;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -283,10 +283,9 @@ p {
   font-size: 42px;
   font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
   font-weight: 700;
-  opacity: 0;
   color: #fff;
   pointer-events: none;
-  background-color: #1f4954;
+  background-color: #00aeef;
   overflow: hidden;
 }
 .nav-active {
@@ -348,7 +347,7 @@ p {
   padding: 0 10px;
   z-index: 1;
   position: relative;
-  background-color: #1f4954;
+  background-color: #00aeef;
 }
 .nav-categories {
   padding: 20px 0 30px;
@@ -375,7 +374,7 @@ p {
   transform: translateZ(0);
 }
 .nav-link:hover {
-  color: #566871;
+  color: #00aeef;
 }
 .nav-link:hover::after {
   -webkit-transform: scaleY(1);
@@ -417,11 +416,11 @@ p {
 }
 .nav-sublinks {
   font-size: 0.45em;
-  color: #80bece;
+  color: #eaeaea;
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 2px solid #3e6c78;
-  border-bottom: 2px solid #3e6c78;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   width: 100%;
   text-align: center;
 }
@@ -446,10 +445,7 @@ p {
   vertical-align: middle;
 }
 .nav-sublink:hover {
-  color: #3e6c78;
-}
-.nav-sublink::after {
-  background-color: #80bece;
+  color: #8b8b8b;
 }
 .rss-icon {
   width: 0.7em;
@@ -482,10 +478,10 @@ h1 {
   padding: 0;
 }
 a {
-  color: #c44736;
+  color: #00aeef;
 }
 a:hover {
-  color: #b84336;
+  color: #8b8b8b;
 }
 .clear {
   color: inherit;
@@ -527,7 +523,7 @@ p {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #b84336;
+  background-color: #8b8b8b;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -1240,7 +1236,7 @@ html {
   padding-top: 50px;
   padding-left: 50px;
   padding-right: 55%;
-  background-color: #1f4954;
+  background-color: #00aeef;
   text-align: left;
   position: relative;
   height: 550px;

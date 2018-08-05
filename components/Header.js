@@ -19,9 +19,26 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
             />
 
             <div className="full-menu">
-                <div className="full-menu--middle">
+    
+            <div className="nav js-nav nav-active">
+                    <div className="nav-content">
+                        <div className="js-nav-header nav-header">
+                            <span className="nav-header-text">Chris Bemister</span>
+                            <div className="nav-header-line js-nav-header-line"></div>
+                        </div>
 
-                    <ul className="main-nav">
+                        <Navbar />
+
+                        <div className="nav-sublinks js-nav-animate">
+                            <div className="js-nav-animate">
+                                <a className="nav-link nav-sublink" href="/github">Github</a>
+                                <a className="nav-link nav-sublink" href="/contact">Contact</a>
+                                <a className="nav-link nav-sublink" href="/resume">Resume</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* <ul className="main-nav">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Work</a></li>
@@ -46,9 +63,10 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
 
-                </div>
+
+                    </div>
 
             </div>
 
