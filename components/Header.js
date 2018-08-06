@@ -1,8 +1,11 @@
 import { format } from 'date-fns'
+import Link from 'next/link'
 
 //COMPONENTS
 import NextSeo from 'next-seo';
 import Navbar from './Navbar'
+
+import MenuClickListener from './MenuClickListener'
 
 export default ({ seoTitle, description, pageTitle, categories, date }) => {
 
@@ -19,8 +22,8 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
             />
 
             <div className="full-menu">
-    
-            <div className="nav js-nav nav-active">
+
+                <div className="nav js-nav nav-active">
                     <div className="nav-content">
                         <div className="js-nav-header nav-header">
                             <span className="nav-header-text">Chris Bemister</span>
@@ -31,48 +34,27 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
 
                         <div className="nav-sublinks js-nav-animate">
                             <div className="js-nav-animate">
-                                <a className="nav-link nav-sublink" href="/github">Github</a>
-                                <a className="nav-link nav-sublink" href="/contact">Contact</a>
-                                <a className="nav-link nav-sublink" href="/resume">Resume</a>
+                                <Link prefetch href="/github">
+                                    <a className="nav-link nav-sublink">Github</a>
+                                </Link>
+                                <Link prefetch href="/contact">
+                                    <a className="nav-link nav-sublink">Contact</a>
+                                </Link>
+                                <Link prefetch href="/resume">
+                                    <a className="nav-link nav-sublink">Resume</a>
+                                </Link>
+
+
                             </div>
                         </div>
                     </div>
 
-                    {/* <ul className="main-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
 
-                    <div className="nav js-nav main-nav">
-                        <div className="nav-content">
-                            <div className="js-nav-header nav-header">
-                                <span className="nav-header-text">Chris Bemister</span>
-                                <div className="nav-header-line js-nav-header-line"></div>
-                            </div>
-
-                            <Navbar />
-
-                            <div className="nav-sublinks js-nav-animate">
-                                <div className="js-nav-animate">
-                                    <a className="nav-link nav-sublink" href="/github">Github</a>
-                                    <a className="nav-link nav-sublink" href="/contact">Contact</a>
-                                    <a className="nav-link nav-sublink" href="/resume">Resume</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div> */}
-
-
-                    </div>
+                </div>
 
             </div>
 
-            {/* <button className="menu-toggle">Open full-screen navigation here</button> */}
-
-            <a href="#" className="menu menu-toggle">
+            <a href="#" onClick={MenuClickListener} className="menu menu-toggle">
                 <span className="menu-icon-line-1 menu-icon-line"></span>
                 <span className="menu-icon-line-2 menu-icon-line"></span>
                 <span className="menu-icon-line-3 menu-icon-line"></span>

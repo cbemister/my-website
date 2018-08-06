@@ -78,7 +78,6 @@ export default class MyDocument extends Document {
             </Fragment>
           )}
 
-          <script type="text/javascript" src="/static/js/menu.js"></script>
         </body>
 
       </html>
