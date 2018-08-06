@@ -3,9 +3,10 @@ import Link from 'next/link'
 
 //COMPONENTS
 import NextSeo from 'next-seo';
-import Navbar from './Navbar'
+import Navbar from '../navigation/Navbar'
+import Sub_navbar from '../navigation/Sub_navbar'
 
-import MenuClickListener from './MenuClickListener'
+import { hamburgerMenu } from '../helpers/ClickListeners'
 
 export default ({ seoTitle, description, pageTitle, categories, date }) => {
 
@@ -32,21 +33,8 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
 
                         <Navbar />
 
-                        <div className="nav-sublinks js-nav-animate">
-                            <div className="js-nav-animate">
-                                <Link prefetch href="/github">
-                                    <a className="nav-link nav-sublink">Github</a>
-                                </Link>
-                                <Link prefetch href="/contact">
-                                    <a className="nav-link nav-sublink">Contact</a>
-                                </Link>
-                                <Link prefetch href="/resume">
-                                    <a className="nav-link nav-sublink">Resume</a>
-                                </Link>
+                        <Sub_navbar />
 
-
-                            </div>
-                        </div>
                     </div>
 
 
@@ -54,7 +42,7 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
 
             </div>
 
-            <a href="#" onClick={MenuClickListener} className="menu menu-toggle">
+            <a href="#" onClick={hamburgerMenu} className="menu menu-toggle">
                 <span className="menu-icon-line-1 menu-icon-line"></span>
                 <span className="menu-icon-line-2 menu-icon-line"></span>
                 <span className="menu-icon-line-3 menu-icon-line"></span>

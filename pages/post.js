@@ -6,7 +6,7 @@ import { format } from 'date-fns'
 import client from '../client'
 
 //COMPONENTS
-import Header from '../components/Header'
+import Header from '../components/layout/Header'
 
 const builder = imageUrlBuilder(client)
 function urlFor(source) {

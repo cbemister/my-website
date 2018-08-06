@@ -1,4 +1,4 @@
-export default () => {
+const hamburgerMenu = () => {
 
     let body = document.querySelector('body');
     let menuToggle = document.querySelector('.menu-toggle');
@@ -19,3 +19,29 @@ export default () => {
     })());
 
 }
+
+const navItem = () => {
+
+    let navLink = document.querySelector('a.nav-link');
+    let body = document.querySelector('body');
+    let menuToggle = document.querySelector('.menu-toggle');
+
+    navLink.onclick = (function (event) {
+        menuToggle = document.querySelector('.menu-toggle');
+        menuToggle.classList.remove('menu-active');
+        body.classList.remove('no-scroll');
+    
+    })();
+    
+}
+
+export {
+    hamburgerMenu,
+    navItem
+}
+
+
+
+
+
+

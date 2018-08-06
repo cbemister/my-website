@@ -2,8 +2,8 @@ import React from 'react'
 import client from '../client'
 
 //COMPONENTS
-import Header from '../components/Header';
-import Case_item from '../components/Case_item';
+import Header from '../components/layout/Header'
+import Case_item from '../components/layout/Case_item'
 
 
 //import "../scss/styles.scss"
