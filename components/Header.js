@@ -61,7 +61,11 @@ export default ({ seoTitle, description, pageTitle, categories, date }) => {
             </a>
 
             <h1 className="site-name">
-                <a className="site-name-link" href="/">Chris Bemister</a>
+
+                <Link prefetch href="/">
+                    <a className="site-name-link">Chris Bemister</a>
+                </Link>
+
             </h1>
 
 
