@@ -1,37 +1,7 @@
-# Blogging with Sanity and Next.js
+# Chris Bemister's Portfolio Website
 
-[Read the tutorial](https://sanity.io/blog/build-your-own-blog-with-sanity-and-next-js?utm_source=github&github_campaing=rbt)
+# Overview
 
-## Get started
+I am building this website as both a portfolio project to showcase what I have built, and as a platform to help me build new website functionality and applications. I am not always able to apply at my current position the advanced web development techniques that I have been learning. The website has the following features & functionality: built using Next.js to create a Reactbased server-side rendered app, uses Sanity.io to store the content in a headless CMS, hosted on Netlify static site hosting, automatic deployment through Zapier using web hooks and Github. I also converted it to a progressive web app using an npm package called next-offline.   
 
-```sh
-# Install the Sanity command line interface
-~/
-> npm i -g @sanity/cli
-
-# Install Sanity in a separate folder
-~/blog-backend
-> sanity init
-
-# Insert the projectId and dataset name from Sanity in client.js
-~/sanity-blog-tutorial
-> nano client.js
-
-# Install frontend dependencies
-~/sanity-blog-tutorial
-> npm install
-
-# Run Next.js in development mode
-~/sanity-blog-tutorial
-> npm run dev
-```
-
-## Deploy as a static site
-
-[Read the tutorial](https://sanity.io/blog/tutorial-export-your-sanity-backed-blog-in-next-js-and-host-it-on-netlify?utm_source=github&utm_campaign=netlifyexport)
-
-```sh
-~/sanity-blog-tutorial
-npm run export
-# exports your site as static files in /out
-```
+# 

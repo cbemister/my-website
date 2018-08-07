@@ -15,7 +15,7 @@ module.exports = withPlugins([
               '/apps': { page: '/apps' },
               '/stack': { page: '/stack' },
               '/blog': { page: '/blog' },
-              '/profile': { page: '/profile' },
+              '/metrics ': { page: '/metrics' },
               '/github': { page: '/github' },
               '/contact': { page: '/contact' },
               '/resume': { page: '/resume' },
