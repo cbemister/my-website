@@ -7,6 +7,7 @@ import client from '../client'
 
 //COMPONENTS
 import Header from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
 
 const builder = imageUrlBuilder(client)
 function urlFor(source) {
@@ -35,6 +36,8 @@ const BlogPost = ({ title = 'No title', name = 'No name', categories = [], autho
       dataset={client.clientConfig.dataset}
     />
     <Link href="/blog"><a>Go to blog listings page</a></Link>
+
+    <Footer />
   </div>
 
 

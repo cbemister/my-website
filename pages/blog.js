@@ -4,7 +4,8 @@ import { format } from 'date-fns'
 import client from '../client'
 
 //COMPONENTS
-import Header from '../components/layout/Header';
+import Header from '../components/layout/Header'
+import Footer from '../components/layout/Footer'
 
 //import "../scss/styles.scss"
 
@@ -20,7 +21,7 @@ const blogIndex = ({ posts = [] }) =>
                 )
             }
         </ul>
-
+            <Footer />
     </div>
 
 blogIndex.getInitialProps = async () => {

@@ -19,6 +19,7 @@ module.exports = withPlugins([
               '/github': { page: '/github' },
               '/contact': { page: '/contact' },
               '/resume': { page: '/resume' },
+              '/roadmap': { page: '/roadmap' },
               ...acc,
               [`/blog/${slug}`]: { page: '/post', query: { slug } }
             }),

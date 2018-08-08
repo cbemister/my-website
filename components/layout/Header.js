@@ -10,7 +10,7 @@ import { hamburgerMenu } from '../helpers/ClickListeners'
 
 export default ({ seoTitle, description, pageTitle, categories, date }) => {
 
-    let hasPageTitle = pageTitle ? <h2>{pageTitle}</h2> : <h2></h2>
+    let hasPageTitle = pageTitle ? <h2>{pageTitle}</h2> : null
 
     return (
 

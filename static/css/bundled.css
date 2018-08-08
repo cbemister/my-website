@@ -989,11 +989,9 @@ html {
 }
 .case-item-text {
   max-width: 90%;
-  font-size: 14px;
   line-height: 1.9em;
   position: relative;
   z-index: 10;
-  padding-top: 1em;
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: translateZ(0);
   font-family: Source Sans Pro, Helvetica Neue, Arial, sans-serif;
