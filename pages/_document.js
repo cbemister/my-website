@@ -61,6 +61,7 @@ export default class MyDocument extends Document {
                   <script src="/static/js/anime.min.js"></script>
                   <script type="text/javascript" src="/static/js/app.js"></script> */}
 
+          <meta name="google-site-verification" content="g00x-ssGRO-PqRc83tc_PlIS6BvyyuuT1DJAkleg1-o" />
 
         </Head>
         <body className="portfolio">
