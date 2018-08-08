@@ -6,7 +6,7 @@ export default () =>
         <div className="contact-info">
             <a className="case-item-header" href="mailto:chrisbemister@gmail.com">ChrisBemister<br />[at]gmail.com</a>
 
-            <p className="case-item-text">I love to learn, code, and hangout with my kids. I work as a <strong>Web Technologist</strong> for <strong><a href="https://autocan.ca"> AutoCanada</a></strong> <a href="https://twitter.com/ChrisBemister">Say hi!</a><br /><br />
+            <p className="case-item-text">I love to learn, code, and hangout with my kids. <br />I work as a <strong>Web Technologist</strong> for <strong><a href="https://autocan.ca"> AutoCanada</a></strong>. <a href="https://twitter.com/ChrisBemister">Say hi!</a><br /><br />
 
                 Chris Bemister <br />Edmonton, Alberta</p>
 
