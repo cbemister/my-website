@@ -11,8 +11,8 @@ export default () =>
             <Link prefetch href="/contact">
                 <a onClick={ navItem } className="nav-link nav-sublink">Contact</a>
             </Link>
-            <Link prefetch href="/resume">
-                <a onClick={ navItem } className="nav-link nav-sublink">Resume</a>
+            <Link prefetch href="/login">
+                <a onClick={ navItem } className="nav-link nav-sublink">Login</a>
             </Link>
 
 
