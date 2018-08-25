@@ -3,7 +3,7 @@ import firebase from 'firebase'
 import 'isomorphic-unfetch'
 import clientCredentials from '../credentials/client'
 
-export default class Index extends Component {
+class Login extends Component {
   static async getInitialProps ({req, query}) {
     const user = req && req.session ? req.session.decodedToken : null
     // don't fetch anything from firebase if the user is not found
@@ -114,3 +114,5 @@ export default class Index extends Component {
     </div>
   }
 }
+
+export default Login
