@@ -1,9 +1,20 @@
 import React from 'react'
-export default class SomePage extends React.Component {
-  static async getInitialProps() {
-    return {}
-  }
-  render() {
-    return <div>test</div>
-  }
+
+//COMPONENTS
+import Header from '../components/layout/Header'
+import Case_item from '../components/layout/Case_item'
+import Footer from '../components/layout/Footer'
+
+export default () => {
+  return (
+    <div>
+      <Header seoTitle="Login Page | ChrisBemister.com" description="" pageTitle="Login Page" />
+
+        <div>Testing</div>
+
+      <Footer />
+
+    </div>
+
+  );
 }
