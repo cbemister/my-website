@@ -14,7 +14,6 @@ module.exports = withPlugins([
         '/metrics ': { page: '/metrics' },
         '/resume': { page: '/resume' },
         '/roadmap': { page: '/roadmap' },
-        '/specs': { page: '/specs' },
         '/stack': { page: '/stack' }
       }
     }
