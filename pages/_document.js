@@ -62,6 +62,8 @@ export default class MyDocument extends Document {
                   <script type="text/javascript" src="/static/js/app.js"></script> */}
 
           <meta name="google-site-verification" content="g00x-ssGRO-PqRc83tc_PlIS6BvyyuuT1DJAkleg1-o" />
+          {/* Bing Webmaster Tools Verification  */}
+          <meta name="msvalidate.01" content="AD4CE2998D92DF2E4F7C2472615F8383" />
 
         </Head>
         <body className="portfolio">
