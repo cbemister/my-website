@@ -1,31 +1,64 @@
-const { createServer } = require('http')
-const { parse } = require('url')
+const express = require('express')
+const bodyParser = require('body-parser')
+const session = require('express-session')
+const FileStore = require('session-file-store')(session)
 const next = require('next')
-const pathMatch = require('path-match')
+const admin = require('firebase-admin')
 
 const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
-const route = pathMatch()
-const match = route('/blog/:slug')
+
+const firebase = admin.initializeApp({
+  credential: admin.credential.cert(require('./credentials/server')),
+  databaseURL: 'https://my-website-e739d.firebaseio.com' // TODO database URL goes here
+}, 'server')
 
 app.prepare()
   .then(() => {
-    createServer((req, res) => {
-      const { pathname, query } = parse(req.url, true)
-      const params = match(pathname)
-      if (params === false) {
-        handle(req, res)
-        return
-      }
-      // assigning `query` into the params means that we still
-      // get the query string passed to our application
-      // i.e. /blog/foo?show-comments=true
-      app.render(req, res, '/post', Object.assign({}, query, params))
+    const server = express()
+
+    server.use(bodyParser.json())
+    server.use(session({
+      secret: 'geheimnis',
+      saveUninitialized: true,
+      store: new FileStore({path: '/tmp/sessions', secret: 'geheimnis'}),
+      resave: false,
+      rolling: true,
+      httpOnly: true,
+      cookie: { maxAge: 604800000 } // week
+    }))
+
+    server.use((req, res, next) => {
+      req.firebaseServer = firebase
+      next()
     })
-      .listen(port, (err) => {
-        if (err) throw err
-        console.log(`> Ready on http://localhost:${port}`)
-      })
+
+    server.post('/api/login', (req, res) => {
+      if (!req.body) return res.sendStatus(400)
+
+      const token = req.body.token
+      firebase.auth().verifyIdToken(token)
+        .then((decodedToken) => {
+          req.session.decodedToken = decodedToken
+          return decodedToken
+        })
+        .then((decodedToken) => res.json({ status: true, decodedToken }))
+        .catch((error) => res.json({ error }))
+    })
+
+    server.post('/api/logout', (req, res) => {
+      req.session.decodedToken = null
+      res.json({ status: true })
+    })
+
+    server.get('*', (req, res) => {
+      return handle(req, res)
+    })
+
+    server.listen(port, (err) => {
+      if (err) throw err
+      console.log(`> Ready on http://localhost:${port}`)
+    })
   })

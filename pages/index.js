@@ -1,5 +1,4 @@
 import React from 'react'
-import client from '../client'
 
 //COMPONENTS
 import Header from '../components/layout/Header'
@@ -38,12 +37,7 @@ const Index = ({ posts = [] }) =>
 
 Index.getInitialProps = async () => {
     return {
-        posts: await client.fetch(`*[_type == "post"][0..1000]{
-      _id,
-      title,
-      "slug": slug.current,
-      _updatedAt
-    }`)
+
     }
 }
 
