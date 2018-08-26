@@ -19,6 +19,10 @@ app.prepare()
   .then(() => {
     const server = express()
 
+    server.get("*", (req, res) => {
+      return handle(req, res);
+    });
+
     server.use(bodyParser.json())
     server.use(session({
       secret: 'geheimnis',
