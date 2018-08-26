@@ -19,10 +19,6 @@ app.prepare()
   .then(() => {
     const server = express()
 
-    server.get("*", (req, res) => {
-      return handle(req, res);
-    });
-
     server.use(bodyParser.json())
     server.use(session({
       secret: 'geheimnis',
@@ -55,6 +51,10 @@ app.prepare()
     server.post('/api/logout', (req, res) => {
       req.session.decodedToken = null
       res.json({ status: true })
+    })
+
+    server.get('/test', (req, res) => {
+      return res.end('we made it')  
     })
 
     server.get('*', (req, res) => {
