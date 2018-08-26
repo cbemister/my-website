@@ -31,7 +31,7 @@
     "dev": "node server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js && node server_sw.js",
-    "export": "yarn run build && next export"
+    "export": "yarn run build && yarn run start"
   },
   "author": "Chris Bemister",
   "license": "ISC"
