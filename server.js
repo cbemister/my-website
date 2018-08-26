@@ -10,6 +10,17 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
+
+
+  // routing
+  const routes = require('./routes')
+  const handler = routes.getRequestHandler(app)
+
+  dev.prepare().then(() => {
+    express().use(handler).listen(3000)
+  })
+   
+
 const firebase = admin.initializeApp({
   credential: admin.credential.cert(require('./credentials/server')),
   databaseURL: 'https://my-website-e739d.firebaseio.com' // TODO database URL goes here
@@ -62,3 +73,4 @@ app.prepare()
       console.log(`> Ready on http://localhost:${port}`)
     })
   })
+
