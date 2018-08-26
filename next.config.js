@@ -2,7 +2,8 @@ const withPlugins = require('next-compose-plugins');
 const { PHASE_DEVELOPMENT_SERVER, PHASE_PRODUCTION_BUILD } = require('next/constants');
 const withOffline = require('next-offline');
  
-module.exports = {
+module.exports = withPlugins([
+  [withOffline, {
     exportPathMap: async function(defaultPathMap) {
       return {
         '/': { page: '/' },
@@ -16,7 +17,9 @@ module.exports = {
         '/stack': { page: '/stack' }
       }
     }
-  }
+    }, ['!', PHASE_DEVELOPMENT_SERVER]],
+]);
+
 
 // const withSass = require('@zeit/next-sass')
 // module.exports = withSass()
