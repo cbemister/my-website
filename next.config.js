@@ -4,7 +4,7 @@ const withOffline = require('next-offline');
  
 module.exports = withPlugins([
   [withOffline, {
-    exportPathMap: function(defaultPathMap) {
+    exportPathMap: async function(defaultPathMap) {
       return {
         '/': { page: '/' },
         '/apps': { page: '/apps' },
