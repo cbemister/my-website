@@ -53,8 +53,12 @@ app.prepare()
       res.json({ status: true })
     })
   
+  server.get('/login', (req, res) => {
+      return app.render(req, res, '/login', req.query)
+    })
+  
   server.get('/test', (req, res) => {
-      return app.render(req, res, '/test', req.query)
+      return app.render(req, res, '/apps', req.query)
     })
 
     server.get('*', (req, res) => {
