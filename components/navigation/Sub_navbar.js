@@ -5,8 +5,8 @@ export default () =>
 
     <div className="nav-sublinks js-nav-animate">
         <div className="js-nav-animate">
-            <Link prefetch href="/github">
-                <a onClick={ navItem } className="nav-link nav-sublink">Github</a>
+            <Link prefetch href="/sandbox">
+                <a onClick={ navItem } className="nav-link nav-sublink">Sandbox</a>
             </Link>
             <Link prefetch href="/contact">
                 <a onClick={ navItem } className="nav-link nav-sublink">Contact</a>

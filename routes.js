@@ -10,7 +10,7 @@ routes
 .add({name: 'contact', page: 'contact'})
 .add({name: 'github', page: 'github'})
 .add({name: 'login', page: 'login'})
-.add({name: 'metrics', page: 'metrics'})
+.add({name: 'sandbox', page: 'sandbox'})
 .add({name: 'resume', page: 'resume'})
 .add({name: 'roadmap', page: 'roadmap'})
 .add({name: 'stack', page: 'stack'})

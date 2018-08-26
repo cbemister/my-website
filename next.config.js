@@ -11,7 +11,7 @@ module.exports = withPlugins([
         '/contact': { page: '/contact' },
         '/github': { page: '/github' },
         '/login ': { page: '/login' },
-        '/metrics ': { page: '/metrics' },
+        '/sandbox ': { page: '/sandbox' },
         '/resume': { page: '/resume' },
         '/roadmap': { page: '/roadmap' },
         '/stack': { page: '/stack' }
