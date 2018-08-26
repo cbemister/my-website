@@ -31,7 +31,7 @@
     "dev": "nodemon server.js",
     "build": "next build",
     "start": "NODE_ENV=production node server.js && node server_sw.js",
-    "export": "next build && next export"
+    "export": "yarn next build && next export"
   },
   "author": "Chris Bemister",
   "license": "ISC"
