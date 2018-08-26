@@ -21,6 +21,7 @@ const nextExpress = require("next-express/server")(app).injectInto(express);
  
 app.prepare()
   .then(() => {
+<<<<<<< HEAD
     // create an Express.js application, augumented with
     // Next-Express: all the normal Express.js functions work as
     // normal
@@ -56,6 +57,60 @@ app.prepare()
     // function was passed to it; it also automatically registers
     // the Next.js request handler (app.getRequestHandler())
     return server.listen(PORT);
+=======
+    const server = express()
+
+    server.use(bodyParser.json())
+    server.use(session({
+      secret: 'geheimnis',
+      saveUninitialized: true,
+      store: new FileStore({path: '/tmp/sessions', secret: 'geheimnis'}),
+      resave: false,
+      rolling: true,
+      httpOnly: true,
+      cookie: { maxAge: 604800000 } // week
+    }))
+
+    server.use((req, res, next) => {
+      req.firebaseServer = firebase
+      next()
+    })
+
+    server.post('/api/login', (req, res) => {
+      if (!req.body) return res.sendStatus(400)
+
+      const token = req.body.token
+      firebase.auth().verifyIdToken(token)
+        .then((decodedToken) => {
+          req.session.decodedToken = decodedToken
+          return decodedToken
+        })
+        .then((decodedToken) => res.json({ status: true, decodedToken }))
+        .catch((error) => res.json({ error }))
+    })
+
+    server.post('/api/logout', (req, res) => {
+      req.session.decodedToken = null
+      res.json({ status: true })
+    })
+  
+  server.get('/login', (req, res) => {
+      return app.render(req, res, '/login', req.query)
+    })
+  
+  server.get('/test', (req, res) => {
+      return app.render(req, res, '/apps', req.query)
+    })
+
+    server.get('*', (req, res) => {
+      return handle(req, res)
+    })
+
+    server.listen(port, (err) => {
+      if (err) throw err
+      console.log(`> Ready on http://localhost:${port}`)
+    })
+>>>>>>> f2fee8fe910929300d2931820ffcaf0b96299d07
   })
   .then(() => console.log(`> Running on http://localhost:${PORT}`))
   .catch(err => {
