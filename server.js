@@ -52,9 +52,9 @@ app.prepare()
       req.session.decodedToken = null
       res.json({ status: true })
     })
-
-    server.get('/test', (req, res) => {
-      return res.end('we made it')  
+  
+  server.get('/test', (req, res) => {
+      return app.render(req, res, '/test', req.query)
     })
 
     server.get('*', (req, res) => {
