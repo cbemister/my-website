@@ -7,3 +7,4 @@ static/template
 static/css/bundled.css
 out/service-worker.js
 .env
+out
